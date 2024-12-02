@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Card</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Carte 1 -->
+      <div id="card1" class="card">
+        <div class="card_content">
+          <img src="assets/burger_img.jpg" alt="Burger Image" />
+
+          <div class="right_content">
+            <div class="line_1">
+              <h3 class="title">Burger au fromage</h3>
+              <p class="price">$5.99</p>
+            </div>
+
+            <p class="description">
+              Le Cheddar est le fromage à burger le plus traditionnel et le plus
+              courant.
+            </p>
+
+            <div class="features">
+              <div class="select">
+                <button class="decrement select-btn">-</button>
+                <input type="text" class="quantity-input" value="1" />
+                <button class="increment select-btn">+</button>
+              </div>
+
+              <button class="delete_btn">
+                <img src="assets/bell.svg" alt="Bell Icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="option">A</div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div id="card2" class="card">
+        <div class="card_content">
+          <img src="assets/burger_img.jpg" alt="Burger Image" />
+
+          <div class="right_content">
+            <div class="line_1">
+              <h3 class="title">Burger au fromage</h3>
+              <p class="price">$5.99</p>
+            </div>
+
+            <p class="description">
+              Le Cheddar est le fromage à burger le plus traditionnel et le plus
+              courant.
+            </p>
+
+            <div class="features">
+              <div class="select">
+                <input
+                  type="text"
+                  class="quantity-input card2-input"
+                  value="1"
+                />
+              </div>
+
+              <button class="delete_btn">
+                <img src="assets/bell.svg" alt="Bell Icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">B</div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div id="card3" class="card card3">
+        <div class="card_content">
+          <img src="assets/burger_img.jpg" alt="Burger Image" />
+
+          <div class="right_content">
+            <div class="line_1">
+              <h3 class="title">Burger au fromage</h3>
+              <p class="price">$5.99</p>
+            </div>
+
+            <p class="description">
+              Le Cheddar est le fromage à burger le plus traditionnel et le plus
+              courant.
+            </p>
+
+            <div class="features">
+              <div class="custom-select">
+                <input
+                  type="text"
+                  class="custom-input"
+                  placeholder="0"
+                  readonly
+                />
+
+                <!-- Icône de dropdown -->
+                <span class="dropdown-icon">&#9662;</span>
+
+                <ul class="dropdown">
+                  <li data-value="1">1</li>
+                  <li data-value="2">2</li>
+                  <li data-value="3">3</li>
+                  <li data-value="4">4</li>
+                  <li data-value="5">5</li>
+                </ul>
+              </div>
+
+              <button class="delete_btn">
+                <img src="assets/bell.svg" alt="Bell Icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">C</div>
+      </div>
+
+      <div class="author">
+        <div class="">G</div>
+        <h2 class="name">Géry GUEDEGBE</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

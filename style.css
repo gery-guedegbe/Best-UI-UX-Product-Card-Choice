@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mona Sans", sans-serif;
+  background: honeydew;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.container .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.container .card img {
+  width: 100px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card_content {
+  padding: 16px 12px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgb(222, 218, 218);
+  border-radius: 15px;
+}
+
+.card_content .right_content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 6px;
+  text-align: start;
+}
+
+.option {
+  padding: 20px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+  background-color: cadetblue;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px rgb(222, 218, 218);
+  border-radius: 50%;
+}
+
+.card_content .right_content .line_1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card_content .right_content .line_1 .title,
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card_content .right_content .description {
+  max-width: 70%;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+}
+
+.card_content .right_content .features {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features .delete_btn {
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.features .delete_btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.select-btn {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.features .select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.features .select input {
+  max-width: 24px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features .select .card2-input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 32px;
+  padding: 2px;
+  text-align: center;
+}
+
+/* Conteneur principal */
+.custom-select {
+  position: relative;
+  width: 38px;
+}
+
+.card3 .right_content .features .custom-input {
+  position: relative;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card3 .right_content .features .custom-input::placeholder {
+  color: white;
+}
+
+.card3 .right_content .features .custom-input:focus {
+  outline: none;
+}
+
+/* Icône de dropdown */
+.custom-select .dropdown-icon {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Désactiver l'interaction avec l'icône */
+  font-size: 16px;
+  color: white;
+}
+
+/* Ajustement du padding pour éviter que l'icône ne chevauche le texte */
+.custom-input {
+  width: 100%;
+  padding-right: 30px; /* Ajouter un espace pour l'icône */
+}
+
+/* Menu déroulant */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #333;
+}
+
+.author {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.author div {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.author .name {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
